@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: #F0FF42;
+}
+
+.navbar {
+    background-color: #82CD47;
+    color: black;
+}
+
+.linkatas {
+    text-decoration: none;
+    color: white;
+    padding: 0 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #54B435;
+    display: inline-block;
+}
+
+a:hover {
+    color: black;
+}
+
+.gambarburung {
+    border: 7px solid #54B435;
+    border-radius: 10%;
+    width: 20%;
+    
+}
+
+.olshop {
+    width: 5%;
+    padding: 0 20px;
+}
+
+.olshops {
+    display: inline-block;
+}
