@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aqua;
+    border: 6px solid black;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    margin: 10px 25px;
+    border: 6px solid black;
+    border-radius: 10px;
+}
