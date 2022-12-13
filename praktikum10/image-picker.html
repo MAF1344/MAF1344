@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+                <li><a href="chatbox.html">Nomor 3</a></li>
+                <li><a href="image-picker.html">Nomor 4</a></li>
+                <li><a href="form.html">Nomor 5</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <select id="hewan" onchange="cetak_gambar()">
+        <option value="">---PILIH---</option>
+        <option value="bison">Bison</option>
+        <option value="gajah">Gajah</option>
+        <option value="gorila">Gorila</option>
+        <option value="macan">Macan</option>
+        <option value="singa">Singa</option>
+    </select>
+    <img id="image">
+    <script>
+        function cetak_gambar(){
+            let dropdown = document.getElementById("hewan").value;
+            let gambar = document.getElementById("image");
+
+            if (dropdown == "bison"){
+                alert("Ini Gambar Bison");
+                gambar.setAttribute("src","img/bison.jpg");
+            }
+            else if (dropdown == "gajah"){
+                alert("Ini Gambar Gajah");
+                gambar.setAttribute("src","img/gajah.jpg");
+            }
+            else if (dropdown == "gorila"){
+                alert("Ini Gambar Gorila");
+                gambar.setAttribute("src","img/gorila.jpg");
+            }
+            else if (dropdown == "macan"){
+                alert("Ini Gambar Macan");
+                gambar.setAttribute("src","img/macan.jpg");
+            }
+            else if (dropdown == "singa"){
+                alert("Ini Gambar Singa");
+                gambar.setAttribute("src","img/singa.jpg");
+            }
+            else {
+                alert("Gambar Tidak Tersedia")
+            }
+        }
+    </script>
+</body>
+</html>
